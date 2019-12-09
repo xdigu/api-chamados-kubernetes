@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-chamados
+  labels:
+    app: api-chamados
+spec:
+  containers:
+  - name: api-chamados
+    image: rjorge/api-chamados
+    ports:
+    - name: nodejs-port
+      containerPort: 8080
