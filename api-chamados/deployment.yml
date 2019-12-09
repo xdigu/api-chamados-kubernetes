@@ -15,7 +15,7 @@ spec:
       containers:
       - name: api-chamados
         image: rjorge/api-chamados:8
-        command: ["npm", "startContainer"]
+        command: ["npm", "run", "startContainer"]
         ports:
         - name: nodejs-port
           containerPort: 8080
